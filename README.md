@@ -58,11 +58,11 @@ Enable test signing:
 
 Install driver: 
 
-         sc create TerminProc type= kernel binPath= [path]\TerminateProcess.sys
+         sc create serviceName type= kernel binPath= [path]\TerminateProcess.sys
 
 Start driver: 
 
-         sc start TerminProc
+         sc start serviceName
 
 🔗 Related Resources
 
@@ -71,4 +71,6 @@ Start driver:
 [WDK Getting Started](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/)
 
 [Sending Commands From Your Userland Program to Your Kernel Driver using IOCTL](https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/sending-commands-from-userland-to-your-kernel-driver-using-ioctl)
+
+[Kernel Process Terminator](https://medium.com/@s12deff/kernel-process-terminator-6e2b6794a312)
 
