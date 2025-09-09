@@ -11,21 +11,29 @@ Process Identification: Find processes by name and PID
 Admin Privilege Enforcement: Requires elevated privileges for operation
 
 🏗️ Architecture
+
 Userland Application (TerminateProcessUserLand.exe)
+
          │
          │ IOCTL Communication
          ▼
+
 Kernel Driver (TerminateProcess.sys)
+
          │
          │ Kernel API Calls
          ▼
+    
     Windows Kernel
+    
          │
          │ Process Management
          ▼
+    
     Target Process
 
 🔧 Technical Details
+
 Driver Type: Windows Kernel-Mode Driver (WDM)
 
 Communication: IOCTL with buffered method
@@ -41,6 +49,7 @@ APIs Used:
   CreateToolhelp32Snapshot (userland)
 
 Installation
+
 Clone the repository
 
 Open solution in Visual Studio
@@ -54,6 +63,7 @@ Install driver: sc create TerminProc type= kernel binPath= [path]\TerminateProce
 Start driver: sc start TerminProc
 
 🔗 Related Resources
+
 [Windows Driver Documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/)
 
 [WDK Getting Started](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/)
