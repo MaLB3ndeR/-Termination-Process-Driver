@@ -40,15 +40,15 @@ Communication: IOCTL with buffered method
 
 APIs Used:
 
-  PsLookupProcessByProcessId
+           PsLookupProcessByProcessId
 
-  ObOpenObjectByPointer
+           ObOpenObjectByPointer
 
-  ZwTerminateProcess
+           ZwTerminateProcess
 
-  CreateToolhelp32Snapshot (userland)
+           CreateToolhelp32Snapshot (userland)
 
-Installation
+📦 Installation
 
 Clone the repository
 
