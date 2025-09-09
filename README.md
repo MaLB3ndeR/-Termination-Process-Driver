@@ -40,27 +40,29 @@ Communication: IOCTL with buffered method
 
 APIs Used:
 
-           PsLookupProcessByProcessId
+         PsLookupProcessByProcessId
 
-           ObOpenObjectByPointer
+         ObOpenObjectByPointer
 
-           ZwTerminateProcess
+         ZwTerminateProcess
 
-           CreateToolhelp32Snapshot (userland)
+         CreateToolhelp32Snapshot (userland)
 
 📦 Installation
 
 Clone the repository
 
-Open solution in Visual Studio
+Enable test signing: 
 
-Build both driver and userland application
+         bcdedit /set testsigning on
 
-Enable test signing: bcdedit /set testsigning on
+Install driver: 
 
-Install driver: sc create TerminProc type= kernel binPath= [path]\TerminateProcess.sys
+         sc create TerminProc type= kernel binPath= [path]\TerminateProcess.sys
 
-Start driver: sc start TerminProc
+Start driver: 
+
+         sc start TerminProc
 
 🔗 Related Resources
 
