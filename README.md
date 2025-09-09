@@ -64,6 +64,11 @@ Start driver:
 
          sc start serviceName
 
+Proof Of Concept
+
+<img width="1220" height="268" alt="image" src="https://github.com/user-attachments/assets/980670c2-82da-441d-b753-5cd966ad81ba" />
+
+
 🔗 Related Resources
 
 [Windows Driver Documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/)
