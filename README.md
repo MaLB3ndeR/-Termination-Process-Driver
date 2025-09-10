@@ -1,7 +1,7 @@
 # 🚀Termination-Process-Driver
 A Windows kernel-mode driver that allows privileged process termination from userland applications. This project demonstrates Windows driver development, IOCTL communication, and process management techniques.
 
-📋 Features
+Features : 
 Kernel-Mode Process Termination: Bypass userland restrictions for process management
 
 Secure IOCTL Communication: Safe communication between userland and kernel-mode
@@ -10,7 +10,7 @@ Process Identification: Find processes by name and PID
 
 Admin Privilege Enforcement: Requires elevated privileges for operation
 
-🏗️ Architecture
+Architecture :
 
 Userland Application (TerminateProcessUserLand.exe)
 
@@ -32,7 +32,7 @@ Kernel Driver (TerminateProcess.sys)
     
     Target Process
 
-🔧 Technical Details
+Technical Details :
 
 Driver Type: Windows Kernel-Mode Driver (WDM)
 
@@ -48,7 +48,7 @@ APIs Used:
 
          CreateToolhelp32Snapshot (userland)
 
-📦 Installation
+Installation :
 
 Clone the repository
 
@@ -71,8 +71,7 @@ Proof Of Concept :
 
 https://github.com/user-attachments/assets/65e166b3-5009-44ab-8f94-1762dcf78a9b
 
-
-🔗 Related Resources
+Related Resources :
 
 [Windows Driver Documentation](https://docs.microsoft.com/en-us/windows-hardware/drivers/)
 
