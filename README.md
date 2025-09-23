@@ -54,7 +54,7 @@ Clone the repository
 
 Enable test signing: 
 
-bcdedit /set testsigning on
+         bcdedit /set testsigning on
 
 Install driver: 
 
